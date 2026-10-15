@@ -467,6 +467,9 @@ assert_not_exists "$FLAT_PROJECT_DIR/.agent/skills/aif-rules-check" "workflow-cl
 
 echo "flat workflow init smoke tests passed"
 
+npm run test:aif-explore-installation --silent
+echo "aif-explore installation reference smoke tests passed"
+
 # -------------------------------------------------------------------
 # Codex app skills smoke: Codex app uses the repository skills location
 # with Codex-style $aif invocations, while Universal remains unchanged.
